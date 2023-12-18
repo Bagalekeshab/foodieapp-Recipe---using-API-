@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+
+} 
+:root{
+    --mainColor: rgb(2, 2, 43);
+    --mainColorLight:rgb(121, 121, 172);
+    --secondayColor:rgb(34, 222, 31);
+    --texColor:white;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+    background-color:var(--mainColor) ;
+    color: var(--texColor);
+    
+}
+.container h1{
+    font-size: 30px;
+    cursor: pointer;
+}
+.container .social_media{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.menu-icon a{
+    margin: 0 3rem;
+    
+    color: var(--texColor);
+    text-decoration: none;
+    font-size:20px;
+    text-align: justify;
+    
+    
+
+}
+.menu-icon a:hover{
+    color: var(--secondayColor);
+}
+.container .social_media a{
+    color: var(--texColor);
+    margin: 0 1rem;
+
+}
+
+.Navbar .nav-btn{
+    padding: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--texColor);
+    visibility: none;
+    opacity: 0;
+    font-size: 1.8rem;
+    
+
+}
+@media only screen and (max-width:1024px) {
+    .container .social_media{
+        visibility: hidden;
+        opacity: 1;
+    }
+    .Navbar .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .Navbar .menu-icon{
+        position: fixed;
+        top:0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+        transform: translateY(-100vh);
+
+        
+    }
+
+    .Navbar .Responsive_nav{
+        transform: none;
+    }
+
+    .menu-icon .nav-close-btn{
+        position: absolute;
+        top:2rem;
+        right: 2rem;
+
+    }
+
+    .menu-icon a{
+        font-size: 1.5rem;
+    }
+
+     
+
+}

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    
+
+
+} 
+.section{
+    background-color:rgb(147, 10, 10);
+    height: 100vh;
+}
+.searchComponent{
+    text-align: center;
+    padding: 2rem 25rem;
+    display: flex;
+    justify-content: space-evenly;
+  
+   
+    
+    
+    
+}
+.searchComponent input[type=search]{
+    
+    background-color: rgb(247, 246, 246);
+    color: rgb(5, 4, 4);
+    height: 2rem;
+    width: 30rem;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+  
+    
+    
+}
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap:2rem;
+    background-color: rgb(147, 10, 10);
+    
+    
+}
+.recipeContainer{
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 10px 0 rgb(235, 234, 234);
+    padding: 10px ;
+    height: 400px;
+    width: 300px;
+    background-color: cyan;
+    
+    
+    
+    
+
+}
+.recipeContainer .recipeImage{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    
+    
+    
+}
+
+
+.recipeContainer recipename{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(1, 12, 12);
+    font-weight: 700;
+    align-items: center;
+    margin: 10px;
+    
+    
+    
+    
+    
+}
+
+.recipeContainer ingrediantname{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(5, 5, 5, 0.459);
+    border-radius: 20px;
+    text-align: center;
+    color:cyan;
+    margin-top: 18rem;
+    
+
+    
+    
+}
+
+.recipeContainer seemorename{
+    
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 21rem;
+    cursor: pointer;
+    width: 220px;
+    height: 30px;
+    background-color: rgba(5, 5, 5, 0.459);
+    border-radius: 20px;
+    text-align: center;
+    color:cyan;
+    
+    
+ 
+}
+
